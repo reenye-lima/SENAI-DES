@@ -28,12 +28,12 @@
 
 - BETWEEN, LIKE, IN
 
-    - BETWEEN: intervalo de datas
+    - BETWEEN: intervalo entre valores
     ```sql
     SELECT * FROM pedidos WHERE data_pedido BETWEEN '2025-01-01' AND '2025-06-30';
     ```
     
-    - LIKE: busca por padrão (contém “café”)
+    - LIKE: busca por padrão (contém)
     ```sql
     SELECT * FROM pedidos WHERE produto LIKE '%café%';
     ```
@@ -46,24 +46,35 @@
 
 - ASC, DESC
 
-    -- ASC: ordem crescente
+    - ASC: ordem crescente
+    ```sql
     SELECT * FROM pedidos ORDER BY quantidade ASC;
+    ```
     
     -- DESC: ordem decrescente
+    ```sql
     SELECT * FROM pedidos ORDER BY data_pedido DESC;
+    ```
 
-- AS
+- AS: Renomeia uma coluna
 
+    ```sql
     SELECT 
       cliente_nome AS cliente,
       produto AS item,
       quantidade AS qtde,
       preco_unitario AS preco
     FROM pedidos;
+    ```
 
 - LIMIT, OFFSET
-     -- LIMIT: mostra os 5 primeiros registros
+  
+     - LIMIT: Define o número de registros a ser exibido
+    ```sql
     SELECT * FROM pedidos LIMIT 5;
+    ```
     
-    -- OFFSET: pula os 5 primeiros e mostra os próximos 5
+    -- OFFSET: Retorna registros a partir de uma posição
+    ```sql
     SELECT * FROM pedidos LIMIT 5 OFFSET 5;
+    ```
