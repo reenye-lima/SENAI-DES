@@ -60,10 +60,10 @@
 
     ```sql
     SELECT 
-      cliente_nome AS cliente,
-      produto AS item,
-      quantidade AS qtde,
-      preco_unitario AS preco
+      cliente_nome AS "cliente",
+      produto AS "item",
+      quantidade AS "qtde",
+      preco_unitario AS "preco"
     FROM pedidos;
     ```
 
