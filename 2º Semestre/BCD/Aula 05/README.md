@@ -6,38 +6,42 @@
     SELECT * FROM pedidos WHERE status = 'entregue';
     ```
     - <p><> (Diferente)</p>
-    - <p>> (Maior)</p>
-    - <p>>= (Maior Igual)</p>
-    - <p>< (Menor)</p>
-    - <p><= (Menor Igual)</p>
-
-    -- = (Igual)
-    
-    -- <> (Diferente)
+    ```sql
     SELECT * FROM pedidos WHERE produto <> 'Café';
-    
-    -- > (Maior)
+    ```
+    - <p>> (Maior)</p>
+    ```sql
     SELECT * FROM pedidos WHERE quantidade > 10;
-    
-    -- >= (Maior ou Igual)
+    ```
+    - <p>>= (Maior Igual)</p>
+    ```sql
     SELECT * FROM pedidos WHERE preco_unitario >= 20;
-    
-    -- < (Menor)
+    ```
+    - <p>< (Menor)</p>
+    ```sql
     SELECT * FROM pedidos WHERE quantidade < 5;
-    
-    -- <= (Menor ou Igual)
+    ```
+    - <p><= (Menor Igual)</p>
+    ```sql
     SELECT * FROM pedidos WHERE preco_unitario <= 10;
+    ```
 
 - BETWEEN, LIKE, IN
 
-    -- BETWEEN: intervalo de datas
+    - BETWEEN: intervalo de datas
+    ```sql
     SELECT * FROM pedidos WHERE data_pedido BETWEEN '2025-01-01' AND '2025-06-30';
+    ```
     
-    -- LIKE: busca por padrão (contém “café”)
+    - LIKE: busca por padrão (contém “café”)
+    ```sql
     SELECT * FROM pedidos WHERE produto LIKE '%café%';
+    ```
     
-    -- IN: múltiplos valores
+    - IN: múltiplos valores
+    ```sql
     SELECT * FROM pedidos WHERE produto IN ('Arroz', 'Feijão', 'Macarrão');
+    ```
 
 
 - ASC, DESC
