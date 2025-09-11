@@ -3,11 +3,11 @@
 - Operadores Relacionais:
     - <p>= (Igual)</p>
     ```sql
-    SELECT * FROM pedidos WHERE status = 'entregue';
+    SELECT * FROM pedidos WHERE status = "entregue";
     ```
     - <p><> (Diferente)</p>
     ```sql
-    SELECT * FROM pedidos WHERE produto <> 'Café';
+    SELECT * FROM pedidos WHERE produto <> "Café";
     ```
     - <p>> (Maior)</p>
     ```sql
@@ -30,17 +30,17 @@
 
     - BETWEEN: intervalo entre valores
     ```sql
-    SELECT * FROM pedidos WHERE data_pedido BETWEEN '2025-01-01' AND '2025-06-30';
+    SELECT * FROM pedidos WHERE data_pedido BETWEEN "2025-01-01" AND "2025-06-30";
     ```
     
     - LIKE: busca por padrão (contém)
     ```sql
-    SELECT * FROM pedidos WHERE produto LIKE '%café%';
+    SELECT * FROM pedidos WHERE produto LIKE "%café%";
     ```
     
     - IN: múltiplos valores
     ```sql
-    SELECT * FROM pedidos WHERE produto IN ('Arroz', 'Feijão', 'Macarrão');
+    SELECT * FROM pedidos WHERE produto IN ("Arroz", "Feijão", "Macarrão");
     ```
 
 
