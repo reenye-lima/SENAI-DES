@@ -2,6 +2,9 @@
 
 - Operadores Relacionais:
     - <p>= (Igual)</p>
+    ```sql
+    SELECT * FROM pedidos WHERE status = 'entregue';
+    ```
     - <p><> (Diferente)</p>
     - <p>> (Maior)</p>
     - <p>>= (Maior Igual)</p>
@@ -9,7 +12,6 @@
     - <p><= (Menor Igual)</p>
 
     -- = (Igual)
-    SELECT * FROM pedidos WHERE status = 'entregue';
     
     -- <> (Diferente)
     SELECT * FROM pedidos WHERE produto <> 'Café';
