@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS locadora;
+CREATE DATABASE locadora;
+
+USE locadora;
+
 CREATE TABLE clientes (
   id INT PRIMARY KEY,
   nome VARCHAR(100),
