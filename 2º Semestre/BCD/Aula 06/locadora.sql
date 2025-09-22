@@ -1,6 +1,3 @@
-
--- Criação das tabelas
-
 CREATE TABLE clientes (
   id INT PRIMARY KEY,
   nome VARCHAR(100),
@@ -23,9 +20,6 @@ CREATE TABLE locacoes (
   FOREIGN KEY (cliente_id) REFERENCES clientes(id),
   FOREIGN KEY (filme_id) REFERENCES filmes(id)
 );
-
-
--- Inserções
 
 INSERT INTO clientes VALUES (1, 'Lorena Melo', 'fariasluna@ig.com.br');
 INSERT INTO clientes VALUES (2, 'Cauê da Costa', 'joaquim88@bol.com.br');
