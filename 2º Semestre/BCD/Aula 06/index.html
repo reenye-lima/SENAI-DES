@@ -1,83 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Checklist SQL - Funções</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #0056b3;
-    }
-    h2 {
-      color: #0056b3;
-      margin-top: 30px;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 10px 0;
-      background-color: #fff;
-      padding: 10px 15px;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    input[type="checkbox"] {
-      margin-right: 10px;
-    }
-    label {
-      cursor: pointer;
-    }
-    code {
-      display: block;
-      background-color: #eee;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 5px;
-      font-size: 0.95em;
-      white-space: pre-wrap;
-    }
-  </style>
-</head>
-<body>
-<h1>Checklist SQL – Funções</h1>
-<form>
-<h2>SUM()</h2><ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist SQL - Funções</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; /* Espaço entre os logos */
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+      }
+      .header img {
+        max-height: 50px; /* Ajuste a altura dos logos conforme necessário */
+        width: auto;
+      }
+      .header #sesi {
+        max-height: 80px; /* Ajuste a altura dos logos conforme necessário */
+        width: auto;
+      }
+      h1 {
+        text-align: center;
+        color: #0056b3;
+      }
+      h2 {
+        color: #0056b3;
+        margin-top: 30px;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        margin: 10px 0;
+        background-color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      label {
+        cursor: pointer;
+      }
+      code {
+        display: block;
+        background-color: #eee;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 0.95em;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        id="sesi"
+        src="https://logodownload.org/wp-content/uploads/2016/10/sesi-logo-8.png"
+        alt="Logo SESI"
+      />
+      <img
+        src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png"
+        alt="Logo SENAI"
+      />
+    </header>
+    <h1>Checklist SQL – Funções</h1>
+    <form>
+      <h2>SUM()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task1" />
-          <label for="task1">Calcule o total arrecadado com todas as locações.</label>
+          <label for="task1"
+            >Calcule o total arrecadado com todas as locações.</label
+          >
         </li>
         <li>
           <input type="checkbox" id="task2" />
-          <label for="task2">Calcule o total arrecadado com locações do status "entregue".</label>
-        </li></ul><h2>AVG()</h2><ul>
+          <label for="task2"
+            >Calcule o total arrecadado com locações do status
+            "entregue".</label
+          >
+        </li>
+      </ul>
+      <h2>AVG()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task3" />
-          <label for="task3">Média de preço dos filmes da categoria "Comédia".</label>
+          <label for="task3"
+            >Média de preço dos filmes da categoria "Comédia".</label
+          >
         </li>
         <li>
           <input type="checkbox" id="task4" />
-          <label for="task4">Média de preço dos filmes alugados por clientes com nome que começa com "A".</label>
-        </li></ul><h2>COUNT()</h2><ul>
+          <label for="task4"
+            >Média de preço dos filmes alugados por clientes com nome que começa
+            com "A".</label
+          >
+        </li>
+      </ul>
+      <h2>COUNT()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task5" />
           <label for="task5">Conte quantos filmes estão cadastrados.</label>
         </li>
         <li>
           <input type="checkbox" id="task6" />
-          <label for="task6">Conte quantas locações foram feitas no ano de 2025.</label>
-        </li></ul><h2>MAX()</h2><ul>
+          <label for="task6"
+            >Conte quantas locações foram feitas no ano de 2025.</label
+          >
+        </li>
+      </ul>
+      <h2>MAX()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task7" />
           <label for="task7">Encontre o filme mais caro do catálogo.</label>
@@ -85,7 +135,10 @@
         <li>
           <input type="checkbox" id="task8" />
           <label for="task8">Encontre a locação mais recente.</label>
-        </li></ul><h2>MIN()</h2><ul>
+        </li>
+      </ul>
+      <h2>MIN()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task9" />
           <label for="task9">Menor preço de filme da categoria "Terror".</label>
@@ -93,31 +146,51 @@
         <li>
           <input type="checkbox" id="task10" />
           <label for="task10">Data da locação mais antiga.</label>
-        </li></ul><h2>CONCAT()</h2><ul>
+        </li>
+      </ul>
+      <h2>CONCAT()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task11" />
-          <label for="task11">Mostrar nome do cliente + título do filme alugado.</label>
+          <label for="task11"
+            >Mostrar nome do cliente + título do filme alugado.</label
+          >
         </li>
         <li>
           <input type="checkbox" id="task12" />
-          <label for="task12">Frase completa: "Cliente [nome] alugou [filme] em [data]".</label>
-        </li></ul><h2>LENGTH()</h2><ul>
+          <label for="task12"
+            >Frase completa: "Cliente [nome] alugou [filme] em [data]".</label
+          >
+        </li>
+      </ul>
+      <h2>LENGTH()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task13" />
-          <label for="task13">Número de caracteres do nome de cada cliente.</label>
+          <label for="task13"
+            >Número de caracteres do nome de cada cliente.</label
+          >
         </li>
         <li>
           <input type="checkbox" id="task14" />
           <label for="task14">Filmes com título maior que 15 caracteres.</label>
-        </li></ul><h2>LOWER()</h2><ul>
+        </li>
+      </ul>
+      <h2>LOWER()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task15" />
           <label for="task15">Títulos dos filmes em minúsculo.</label>
         </li>
         <li>
           <input type="checkbox" id="task16" />
-          <label for="task16">Nomes dos clientes em minúsculo com status "cancelado".</label>
-        </li></ul><h2>UPPER()</h2><ul>
+          <label for="task16"
+            >Nomes dos clientes em minúsculo com status "cancelado".</label
+          >
+        </li>
+      </ul>
+      <h2>UPPER()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task17" />
           <label for="task17">Nomes dos clientes em maiúsculas.</label>
@@ -125,15 +198,23 @@
         <li>
           <input type="checkbox" id="task18" />
           <label for="task18">Categorias dos filmes em maiúsculas.</label>
-        </li></ul><h2>ROUND()</h2><ul>
+        </li>
+      </ul>
+      <h2>ROUND()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task19" />
-          <label for="task19">Arredonde os preços dos filmes para inteiro.</label>
+          <label for="task19"
+            >Arredonde os preços dos filmes para inteiro.</label
+          >
         </li>
         <li>
           <input type="checkbox" id="task20" />
           <label for="task20">Arredonde os preços com uma casa decimal.</label>
-        </li></ul><h2>POW()</h2><ul>
+        </li>
+      </ul>
+      <h2>POW()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task21" />
           <label for="task21">Exiba preço dos filmes ao quadrado.</label>
@@ -141,23 +222,36 @@
         <li>
           <input type="checkbox" id="task22" />
           <label for="task22">2 elevado ao ID do cliente.</label>
-        </li></ul><h2>MOD()</h2><ul>
+        </li>
+      </ul>
+      <h2>MOD()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task23" />
           <label for="task23">Verifique se o ID do cliente é par.</label>
         </li>
         <li>
           <input type="checkbox" id="task24" />
-          <label for="task24">Verifique se o ID do filme dividido por 3 tem resto 0.</label>
-        </li></ul><h2>NOW() / CURDATE()</h2><ul>
+          <label for="task24"
+            >Verifique se o ID do filme dividido por 3 tem resto 0.</label
+          >
+        </li>
+      </ul>
+      <h2>NOW() / CURDATE()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task25" />
           <label for="task25">Mostre data e hora atual (NOW).</label>
         </li>
         <li>
           <input type="checkbox" id="task26" />
-          <label for="task26">Liste locações com data menor que a atual (CURDATE).</label>
-        </li></ul><h2>DAY() / MONTH() / YEAR()</h2><ul>
+          <label for="task26"
+            >Liste locações com data menor que a atual (CURDATE).</label
+          >
+        </li>
+      </ul>
+      <h2>DAY() / MONTH() / YEAR()</h2>
+      <ul>
         <li>
           <input type="checkbox" id="task27" />
           <label for="task27">Mostre o dia das locações.</label>
@@ -165,4 +259,8 @@
         <li>
           <input type="checkbox" id="task28" />
           <label for="task28">Liste filmes alugados no mês 01 (janeiro).</label>
-        </li></ul></form></body></html>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
