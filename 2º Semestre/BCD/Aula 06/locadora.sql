@@ -4,20 +4,20 @@ CREATE DATABASE locadora;
 USE locadora;
 
 CREATE TABLE clientes (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(100),
   email VARCHAR(100)
 );
 
 CREATE TABLE filmes (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT  PRIMARY KEY,
   titulo VARCHAR(100),
   categoria VARCHAR(50),
   preco DECIMAL(10,2)
 );
 
 CREATE TABLE locacoes (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT  PRIMARY KEY,
   cliente_id INT,
   filme_id INT,
   data_locacao DATE,
