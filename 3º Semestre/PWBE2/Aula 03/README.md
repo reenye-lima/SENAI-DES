@@ -131,6 +131,23 @@ frase.replaceAll("olá", "oi");
 ```
 
 ------------------------------------------------------------------------
+
+## .typeof(variavel)
+
+Retorna o tipo da variável informada.
+
+``` js
+let numero = 1234;
+typeof(numero);
+//number
+
+let texto = "1234";
+typeof(texto);
+//string
+```
+
+------------------------------------------------------------------------
+
 # Arrays
 
 Arrays armazenam listas de valores.
