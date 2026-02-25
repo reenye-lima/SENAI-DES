@@ -108,6 +108,29 @@ console.log(arquivo.endsWith(".pdf"));
 
 ------------------------------------------------------------------------
 
+## .replace(" ", "")
+
+Substitui a primeira ocorrencia em uma string.
+
+``` js
+let frase = "olá mundo, olá novamente";
+frase.replace("olá", "oi");
+//oi mundo, olá novamente
+```
+
+------------------------------------------------------------------------
+
+## .replaceAll(" ", "")
+
+Substitui todas as ocorrencias em uma string.
+
+``` js
+let frase = "olá mundo, olá novamente";
+frase.replaceAll("olá", "oi");
+//oi mundo, oi novamente
+```
+
+------------------------------------------------------------------------
 # Arrays
 
 Arrays armazenam listas de valores.
