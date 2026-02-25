@@ -1,4 +1,4 @@
-# Regras de Negócio -- Locadora de Veículos
+# Locadora de Veículos
 
 Contexto: Sistema de locadora de veículos com dois controllers: -
 carrosController - clientesController
